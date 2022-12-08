@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c44aa10f3.js" crossorigin="anonymous"></script>
+    <title>Simulador de prestamos</title>
+    <link rel="stylesheet" href="./css/prestamos.css">
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+            <h1>SIMULADOR DE PRESTAMOS</h1>
+            <form>
+                <div>
+                    <label for="dinero">DINERO A PRESTAR:
+                        <input type="number" placeholder="Ingrese el dinero prestado" id="dinero">
+                        
+                    </label>
+                </div>
+                <div>
+                    <label for="cuota">CUOTAS:
+                        <input type="number" placeholder="Ingrese las cuotas del prestamo" id="cuota">
+                        
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">TASA DE INTERÉS:
+                        <input type="number" placeholder="Ingrese la tasa interés a generar" id="interes">
+                        
+                    </label>
+                </div>
+            </form>
+        <button onclick="gen_table();">CALCULAR</button>
+        </fieldset>
+        <table class="tab">
+            <thead>
+                <tr>
+                    <td>CUOTA</td>
+                    <td>DINERO PRESTADO</td>
+                    <td>INTERES GANADO</td>
+                    <td>TOTAL A COBRAR</td>
+                </tr>
+            </thead>
+            <tbody 
+            id="tab">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="./scripts/prestamos.js"></script>
+</body>
+</html>
