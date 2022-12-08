@@ -1,4 +1,3 @@
-alert('Por favor, ingresar los datos en los espacios.')
 function gen_table() {
     document.getElementById("tab").innerHTML = "";
     let n = Number(document.getElementById("dinero").value);
